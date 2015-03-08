@@ -49,7 +49,7 @@
 {
     [super viewDidLoad];
 
-    self.navigationBar.barTintColor = [UIColor colorWithRed:0.01 green:0.05 blue:0.06 alpha:1]; //%%% bartint
+    self.navigationBar.barTintColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:1]; //%%% bartint
     self.navigationBar.translucent = NO;
     viewControllerArray = [[NSMutableArray alloc]init];
     currentPageIndex = 0;
@@ -130,7 +130,7 @@
 -(void)setupSelector
 {
     selectionBar = [[UIView alloc]initWithFrame:CGRectMake(X_BUFFER-X_OFFSET, SELECTOR_Y_BUFFER,(self.view.frame.size.width-2*X_BUFFER)/[viewControllerArray count], SELECTOR_HEIGHT)];
-    selectionBar.backgroundColor = [UIColor greenColor]; //%%% sbcolor
+    selectionBar.backgroundColor = ; //%%% sbcolor
     selectionBar.alpha = 0.8; //%%% sbalpha
     [navigationView addSubview:selectionBar];
 }
